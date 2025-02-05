@@ -7,19 +7,19 @@ const Navbar = ({ user, onLogout }) => {
   return (
     <nav className="bg-gray-900 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Left - Brand Logo */}
+
         <Link to="/" className="text-2xl font-bold text-white hover:text-gray-300">
           🍏 Apple Store
         </Link>
 
-        {/* Center - Navigation Links */}
+    
         <div className="hidden md:flex space-x-6">
           <Link to="/products" className="hover:text-gray-300">Products</Link>
           <Link to="/stores" className="hover:text-gray-300">Stores</Link>
           {user?.isAdmin && <Link to="/admin" className="hover:text-gray-300">Admin</Link>}
         </div>
 
-        {/* Right - Auth Buttons */}
+
         <div>
           {user ? (
             <div className="flex items-center space-x-4">

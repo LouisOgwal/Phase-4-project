@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductList from "../components/ProductList";

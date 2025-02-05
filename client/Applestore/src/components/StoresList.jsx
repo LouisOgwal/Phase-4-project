@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const StoresList = () => {
   const [stores, setStores] = useState([]);
 
-  // Fetch stores from backend
+
   useEffect(() => {
     fetch("http://localhost:5000/stores")
       .then((res) => res.json())
@@ -13,7 +13,7 @@ const StoresList = () => {
       .catch((error) => console.error("Error fetching stores:", error));
   }, []);
 
-  // Handle store deletion
+  
   const handleDelete = (id) => {
     fetch(`http://localhost:5000/stores/${id}`, {
       method: "DELETE",
